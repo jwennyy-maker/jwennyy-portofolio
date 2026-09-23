@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* HEADER */
+/* HEADER */
+header {
+    background-color: #d89b00;
+    color: white;
+    padding: 20px 50px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    transform: skew(-8deg);
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-list a:hover {
+    color: #ffe08a;
+}
+
+/* BERANDA */
+.hero-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 50px;
+    background-color: white;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.greeting {
+    font-size: 20px;
+}
+
+.hero-text h1 {
+    font-size: 45px;
+    color: #d89b00;
+    margin: 10px 0;
+}
+
+.description {
+    line-height: 1.6;
+}
+
+.hero-image img {
+    width: 220px;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 5px solid #d89b00;
+}
+
+/* SECTION */
+.section {
+    padding: 50px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.section h2 {
+    color: #d89b00;
+    margin-bottom: 25px;
+}
+
+.section p {
+    max-width: 750px;
+    margin: 10px auto;
+    line-height: 1.7;
+}
+
+/* PENDIDIKAN */
+.education-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.education-item {
+    background-color: #f5e7bd;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 250px;
+}
+
+.education-item h3 {
+    margin-top: 0;
+}
+
+.education-item span {
+    color: #777;
+    font-size: 14px;
+}
+
+/* SOCIAL MEDIA */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media a {
+    background-color: #d89b00;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.social-media a:hover {
+    background-color: #b77e00;
+}
+
+/* FOOTER */
+footer {
+    background-color: #d89b00;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        padding: 20px;
+        background-color: #d89b00;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    #menu-btn {
+        display: block;
+        border: none;
+        background: none;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+
+    .section {
+        padding: 40px 20px;
+    }
+
+    .education-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-media {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-media a {
+        width: 150px;
+    }
+}
+
+#about-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #d89b00;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#about-btn:hover {
+    background-color: #b77e00;
+}
